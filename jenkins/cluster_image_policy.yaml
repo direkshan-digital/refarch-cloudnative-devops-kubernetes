@@ -1,0 +1,34 @@
+apiVersion: securityenforcement.admission.cloud.ibm.com/v1beta1
+kind: ClusterImagePolicy
+metadata:
+  name: jenkins
+spec:
+  repositories:
+  - name: 'docker.io/ibmcase/docker'
+    policy:
+      va:
+        enabled: false
+  - name: 'docker.io/ibmcase/nodejs'
+    policy:
+      va:
+        enabled: false
+  - name: 'docker.io/ibmcase/openjdk-bash'
+    policy:
+      va:
+        enabled: false
+  - name: 'docker.io/ibmcase/jenkins-slave-utils'
+    policy:
+      va:
+        enabled: false
+  - name: 'docker.io/ibmcase/podman'
+    policy:
+      va:
+        enabled: false
+  - name: 'docker.io/jenkins/jenkins'
+    policy:
+      va:
+        enabled: false
+  - name: 'docker.io/jenkins/jnlp-slave'
+    policy:
+      va:
+        enabled: false

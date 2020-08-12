@@ -27,3 +27,9 @@ Temporary Items
 
 jenkins/*.tgz
 jenkins/*.bak
+
+*.html
+
+# Ignore CLIs
+docker_images/jenkins-slave-utils/cloudctl
+docker_images/jenkins-slave-utils/mcmctl
